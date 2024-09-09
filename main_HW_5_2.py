@@ -2,7 +2,7 @@ import re
 
 # Генератор, що відбирає числа з аргументу
 def generator_numbers(text: str):
-    yield re.findall(r'\d+\.\d+', text)
+    yield re.findall(r' \d+\.\d+ ', text)
 
 # Обчислення суми
 def sum_profit(text: str, generator_numbers):
